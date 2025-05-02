@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about the ALCU 2024 Games – a showcase of talent and unity among local colleges and universities." />
+  <meta property="og:title" content="About | ALCU 2024" />
+  <meta property="og:description" content="Learn more about the ALCU 2024 Games – a showcase of talent and unity among local colleges and universities." />
+  <meta property="og:image" content="your-image-link" />
+  <meta property="og:url" content="your-url" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>About | ALCU 2024</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-700 text-white py-4 shadow-lg fixed w-full z-20">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto px-6">
+      <!-- Logo and Title -->
+      <div class="flex items-center gap-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4jeyrtApRw6SIX9WR5342CsRMDX4ZiMRLg&s" alt="ALCU Logo" class="h-12 w-12 rounded-full" />
+        <h1 class="text-3xl font-extrabold tracking-tight">ALCU 2025</h1>
+      </div>
+      
+      <!-- Desktop Navigation Links -->
+      <ul class="hidden md:flex gap-8 text-lg">
+        <li><a href="index.html" class="nav-link" id="home-link">Home</a></li>
+        <li><a href="about.html" class="nav-link" id="about-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link" id="gallery-link">Gallery</a></li>
+      </ul>
+      
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white hover:text-green-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-green-700 text-white md:hidden">
+      <ul class="flex flex-col items-center p-4 space-y-4">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <script>
+    // Set active link on page load (can be dynamic with backend rendering)
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.nav-link');
+      const currentPage = window.location.pathname.split('/').pop(); // Get current page from URL
+
+      links.forEach(link => {
+        if (link.getAttribute('href').includes(currentPage)) {
+          link.classList.add('underline', 'font-semibold'); // Underline active link
+        }
+      });
+
+      // Mobile menu toggle
+      document.getElementById('mobile-menu-button').addEventListener('click', () => {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+  
+  <style>
+    /* Active Link Styling */
+    .nav-link {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link.underline {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  </style>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Include Animate.css CDN in your <head> if not already -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<!-- Hero Section: ALCU Student Life Highlight -->
+<main class="pt-20 pb-20">
+  <section 
+    class="relative w-full min-h-[calc(100vh-144px)] flex items-center justify-center overflow-hidden" 
+    style="background-image: url('https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?semt=ais_hybrid&w=740'); background-attachment: fixed; background-size: cover; background-position: center;"
+  >
+    <!-- Dark overlay for contrast -->
+    <div class="bg-black/50 absolute inset-0 z-0"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Left: Student Photo with entrance animation -->
+      <div class="flex justify-center animate__animated animate__fadeInLeft animate__slow">
+        <img src="https://images4.alphacoders.com/135/1352902.jpeg" alt="Julie ALCU Photo" class="rounded-2xl shadow-2xl w-[300px] h-[300px] object-cover border-4 border-white">
+      </div>
+
+      <!-- Right: Name & Comment with entrance animation -->
+      <div class="text-white text-center md:text-left animate__animated animate__fadeInRight animate__slow">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">Julie A. Bayoyos</h2>
+        <p class="text-lg lg:text-xl mb-6 drop-shadow-md leading-relaxed">
+          As a proud IT student, ALCU 2025 was more than just a competition — it was a celebration of passion, unity, and talent. From cheering with my team to showcasing skills, every moment was unforgettable.
+        </p>
+        <a href="gallery.html" class="inline-block bg-white text-green-700 px-8 py-4 rounded-full font-semibold shadow-xl transform hover:scale-105 transition duration-300">
+          View My ALCU Gallery
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Footer -->
+<footer class="bg-green-100 py-4 fixed bottom-0 left-0 w-full shadow-md z-10">
+  <div class="max-w-7xl mx-auto text-center text-gray-700 text-sm">
+    <p class="mb-2">&copy; 2025 ALCU Games Website by <strong>Julie A. Bayoyos</strong></p>
+    
+    <div class="space-x-6 text-lg flex justify-center items-center">
+      <a href="https://www.facebook.com/share/18bGfBqim5/" target="_blank" class="text-green-700 hover:text-green-500 flex items-center space-x-1">
+        <i class="fab fa-facebook"></i>
+        <span>Facebook</span>
+      </a>
+      <a href="https://www.instagram.com/julie_bayoyos?igsh=dzJ3OWRjcjF0Nmxu" target="_blank" class="text-green-700 hover:text-green-500 flex items-center space-x-1">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about the ALCU 2024 Games – a showcase of talent and unity among local colleges and universities." />
+  <meta property="og:title" content="About | ALCU 2024" />
+  <meta property="og:description" content="Learn more about the ALCU 2024 Games – a showcase of talent and unity among local colleges and universities." />
+  <meta property="og:image" content="your-image-link" />
+  <meta property="og:url" content="your-url" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>About | ALCU 2024</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+ <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-700 text-white py-4 shadow-lg fixed w-full z-20">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto px-6">
+      <!-- Logo and Title -->
+      <div class="flex items-center gap-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4jeyrtApRw6SIX9WR5342CsRMDX4ZiMRLg&s" alt="ALCU Logo" class="h-12 w-12 rounded-full" />
+        <h1 class="text-3xl font-extrabold tracking-tight">ALCU 2025</h1>
+      </div>
+      
+      <!-- Desktop Navigation Links -->
+      <ul class="hidden md:flex gap-8 text-lg">
+        <li><a href="index.html" class="nav-link" id="home-link">Home</a></li>
+        <li><a href="about.html" class="nav-link" id="about-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link" id="gallery-link">Gallery</a></li>
+      </ul>
+      
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white hover:text-green-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-green-700 text-white md:hidden">
+      <ul class="flex flex-col items-center p-4 space-y-4">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <script>
+    // Set active link on page load (can be dynamic with backend rendering)
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.nav-link');
+      const currentPage = window.location.pathname.split('/').pop(); // Get current page from URL
+
+      links.forEach(link => {
+        if (link.getAttribute('href').includes(currentPage)) {
+          link.classList.add('underline', 'font-semibold'); // Underline active link
+        }
+      });
+
+      // Mobile menu toggle
+      document.getElementById('mobile-menu-button').addEventListener('click', () => {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+  
+  <style>
+    /* Active Link Styling */
+    .nav-link {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link.underline {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  </style>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gallery Section -->
+<main class="max-w-7xl mx-auto px-4 pt-24 pb-24">
+  <h2 class="text-4xl font-extrabold text-center text-green-800 mb-10 tracking-tight">Event Highlights</h2>
+  
+  <!-- Day 1 Album -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-center text-green-700">Day 1</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Single Image Card Example -->
+<div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+  <img src="https://media.istockphoto.com/id/1077629152/photo/man-and-woman-taekwondo-combat.jpg?s=612x612&w=0&k=20&c=QnXLyB57a3iiR31yWF1hP_MXefDenD8te5CoSFsSahI="
+       alt="Event Photo Day 1"
+       class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+       data-description="1. James Velasco – Senior Men’s Division
+       James delivered a commanding performance in the recent match, showcasing powerful roundhouse kicks and sharp timing that kept his opponent on the defensive throughout the game.
+       
+       2. Carla Mendoza – Women’s Featherweight
+       Carla impressed the crowd with her agility and focus, scoring decisive points with quick counterattacks and solid stances, leading her to a well-earned victory.
+       
+       " />
+</div>
+
+<!-- Single Image Card Example -->
+<div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+  <img src="your-image-url-1.jpg"
+       alt="Event Photo Day 1"
+       class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+       data-description="This was during the opening parade." />
+</div>
+
+
+<!-- Single Image Card Example -->
+<div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+  <img src="your-image-url-1.jpg"
+       alt="Event Photo Day 1"
+       class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+       data-description="This was during the opening parade." />
+</div>
+
+
+<!-- Single Image Card Example -->
+<div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+  <img src="your-image-url-1.jpg"
+       alt="Event Photo Day 1"
+       class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+       data-description="This was during the opening parade." />
+</div>
+
+      <!-- More images... -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Day 2 Album -->
+<div class="mb-10">
+  <h3 class="text-2xl font-semibold text-center text-green-700">Day 2</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <!-- Single Image Card Example -->
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-1.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Day 2 activity - sports event opening." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-2.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Cultural performance on Day 2." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-3.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Students cheering during the event." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-4.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Awarding ceremony of winners." />
+    </div>
+
+    <!-- Add more images as needed -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Day 2 Album -->
+<div class="mb-10">
+  <h3 class="text-2xl font-semibold text-center text-green-700">Day 3</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <!-- Single Image Card Example -->
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-1.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Day 2 activity - sports event opening." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-2.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Cultural performance on Day 2." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-3.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Students cheering during the event." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-4.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Awarding ceremony of winners." />
+    </div>
+
+    <!-- Add more images as needed -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Day 2 Album -->
+<div class="mb-10">
+  <h3 class="text-2xl font-semibold text-center text-green-700">Day 4</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <!-- Single Image Card Example -->
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-1.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Day 2 activity - sports event opening." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-2.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Cultural performance on Day 2." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-3.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Students cheering during the event." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-4.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Awarding ceremony of winners." />
+    </div>
+
+    <!-- Add more images as needed -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Day 2 Album -->
+<div class="mb-10">
+  <h3 class="text-2xl font-semibold text-center text-green-700">Day 5</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <!-- Single Image Card Example -->
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-1.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Day 2 activity - sports event opening." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-2.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Cultural performance on Day 2." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-3.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Students cheering during the event." />
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-lg border cursor-pointer">
+      <img src="your-image-url-4.jpg"
+           alt="Event Photo Day 2"
+           class="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 gallery-item"
+           data-description="Awarding ceremony of winners." />
+    </div>
+
+    <!-- Add more images as needed -->
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 hidden justify-center items-center z-50 px-4">
+  <div class="modal-content bg-white p-6 rounded-xl max-w-3xl w-full flex flex-col items-center gap-4 relative">
+    <!-- Close Button -->
+    <span id="modalClose" class="absolute top-2 right-4 text-gray-500 text-3xl font-bold cursor-pointer">×</span>
+
+    
+    <!-- Enlarged Image -->
+    <img src="" alt="Enlarged photo" id="modalImg" class="max-w-full max-h-[70vh] object-contain rounded-md shadow-md" />
+    
+    <!-- Image Description -->
+    <p id="modalDesc" class="text-center text-gray-800 text-lg mt-4">Description goes here...</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalDesc = document.getElementById("modalDesc");
+    const modalClose = document.getElementById("modalClose");
+
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    galleryItems.forEach(item => {
+      item.addEventListener("click", () => {
+        modalImg.src = item.src;
+        modalDesc.textContent = item.dataset.description || "No description available.";
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      });
+    });
+
+    modalClose.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    function closeModal() {
+      modal.classList.remove("flex");
+      modal.classList.add("hidden");
+      modalImg.src = "";
+      modalDesc.textContent = "";
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Footer -->
+<footer class="bg-green-100 py-4 fixed bottom-0 left-0 w-full shadow-md z-10">
+  <div class="max-w-7xl mx-auto text-center text-gray-700 text-sm">
+    <p class="mb-2">&copy; 2025 ALCU Games Website by <strong>Julie A. Bayoyos</strong></p>
+    
+    <div class="space-x-6 text-lg flex justify-center items-center">
+      <a href="https://www.facebook.com/share/18bGfBqim5/" target="_blank" class="text-green-700 hover:text-green-500 flex items-center space-x-1">
+        <i class="fab fa-facebook"></i>
+        <span>Facebook</span>
+      </a>
+      <a href="https://www.instagram.com/julie_bayoyos?igsh=dzJ3OWRjcjF0Nmxu" target="_blank" class="text-green-700 hover:text-green-500 flex items-center space-x-1">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+  
+
+</body>
+</html>
